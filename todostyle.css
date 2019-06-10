@@ -1,0 +1,56 @@
+body{
+    min-width: 470px;
+}h1{
+    padding: 2vh;
+    width: 50%;
+    min-height: 37px;
+    margin: auto;
+    background-color: darkorchid;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+.adddiv {
+    display:flex;
+    margin: auto;
+    padding: 1vh 2vh;
+    width: 50%;
+    background-color: #eee1f34d;
+    overflow: auto;
+    justify-content: center;
+}
+#lists{
+    width:50%;
+    margin:auto;
+    padding: 1vh 2vh;
+    background-color: #eee1f34d;
+    min-width: 470px;
+}
+
+#inputarea {
+    position: relative;
+    width:50%;
+    margin-right:5px;
+    margin-left:8px;
+}
+.add{
+    position: relative;
+    margin-right:5px;
+    float: right;
+}
+#todolist{
+    display:none;
+    margin: 3px;
+    overflow: auto;
+    background-color: rgba(128, 126, 128, 0.06);
+
+}
+button{
+    float: right;
+    display: inline-block;
+}
+p{
+    display: inline-block;
+    margin: 0;
+}
+

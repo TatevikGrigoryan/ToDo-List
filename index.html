@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+    <link rel="stylesheet" href="todostyle.css">
+   <script src="todo.js"></script>
+    </head>
+<body>
+<h1>To do list</h1>
+<div class="adddiv">
+    <input  type="text" id= 'inputarea' placeholder="Add new list item" onkeypress="enterKey(event)">
+    <input  type="button" value="Add" class="add" onclick="addItem()" >
+</div>
+<div id ="lists">
+</div>
+<div id="todolist">
+    <p onclick="cheekItem(event)"></p>
+    <button onclick="delItem(event)">x</button>
+</div>
+</body>
+</html>
