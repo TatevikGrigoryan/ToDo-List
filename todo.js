@@ -1,20 +1,24 @@
 function addItem() {
-    let newItem = document.getElementById("inputarea").value;
-    let list =  document.getElementById("lists");
+    let newValue = document.getElementById("inputarea").value;
+    let list = document.getElementById("list");
     //cheek if inputarea is empty
-    if(newItem === ""){
-        alert("You don't add new To Do" );
+    if (newValue === "") {
+        alert("You don't add new To Do");
         return;
     }
 
-    let cloneLi = document.getElementById("todolist");
-    let createItem = cloneLi.cloneNode(true);
+    let createItem = document.createElement("p");
+    createItem.innerHTML = newValue;
     list.appendChild(createItem);
-    list.insertBefore(createItem,list.childNodes[0]);
-    createItem.querySelector("p").innerHTML =  newItem;
-    createItem.querySelector("p").style.textDecoration = "none"; createItem.style.display = "block";
-    document.getElementById("inputarea").value = '';
-   }
+    let delButton = document.createElement("button");
+    delButton.innerHTML = "x";
+    createItem.appendChild(delButton);
+    document.getElementById("inputarea").value = "";
+    createItem.addEventListener("click", cheekItem);
+    delButton.addEventListener("click",delItem)
+
+}
+
 //run enter key
 function enterKey(key) {
     let keyCode = key.which;
@@ -30,7 +34,7 @@ function cheekItem(item) {
     }
 }
 function delItem(item) {
-    let list =  document.getElementById("lists");
-    let parentItem = item.target.parentElement;
-    list.removeChild(parentItem);
+    let list =  document.getElementById("list");
+    let toDoItem = item.target.parentElement;
+    list.removeChild(toDoItem);
 }

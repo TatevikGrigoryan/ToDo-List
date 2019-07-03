@@ -1,26 +1,32 @@
 body{
-    min-width: 470px;
-}h1{
+    background-image: url("image/fon.jpg");
+}
+#todo{
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff2e;
+    margin: auto;
+
+}
+h1{
     padding: 2vh;
-    width: 50%;
     min-height: 37px;
     margin: auto;
     background-color: darkorchid;
     color: white;
     text-align: center;
     font-style: italic;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.adddiv {
+#input_add {
     display:flex;
     margin: auto;
     padding: 1vh 2vh;
-    width: 50%;
-    background-color: #eee1f34d;
+       background-color: #eee1f34d;
     overflow: auto;
     justify-content: center;
 }
-#lists{
-    width:50%;
+#list{
     margin:auto;
     padding: 1vh 2vh;
     background-color: #eee1f34d;
@@ -33,24 +39,25 @@ body{
     margin-right:5px;
     margin-left:8px;
 }
-.add{
+#addButton{
     position: relative;
     margin-right:5px;
     float: right;
 }
-#todolist{
-    display:none;
-    margin: 3px;
-    overflow: auto;
-    background-color: rgba(128, 126, 128, 0.06);
 
-}
 button{
     float: right;
     display: inline-block;
+    padding: 0 3px;
 }
 p{
-    display: inline-block;
-    margin: 0;
+    background-color: beige;
+    margin: 3px;
+    padding: 0 0 0 2px;
+    border: 2px solid #dcdcdc7d;
 }
+p:hover{
+    border: 2px solid #b44848d9;
+}
+
 
